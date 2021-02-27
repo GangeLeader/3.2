@@ -374,8 +374,9 @@ def pilih_super():
 		
 		
 		
-        except:	
-		pass
+                except:	
+			pass
+		
 	p = ThreadPool(30)
 	p.map(main, id)
 	print "\033[1;92m•◈•╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬•◈•\033[1;91mKali.Linux\033[1;92m•◈•╬╬╬╬╬╬╬╬╬╬╬╬•◈•"
@@ -394,3 +395,4 @@ if __name__ == '__main__':
 # global cekpoint ## Warning: Unused global
 # okay decompiling crack.pyc        
 # Arbab.py decompiled commpleted
+### System acived
