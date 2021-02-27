@@ -142,7 +142,7 @@ def tokenz():
     except KeyError:
         print 'Wrong' 
         
- def menu():
+def menu():
     os.system('clear')
     try:
         toket = open('login.txt', 'r').read()
