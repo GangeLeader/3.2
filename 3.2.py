@@ -278,23 +278,7 @@ def pilih_mbf():
             sys.stdout.flush()
             time.sleep(1)    
     
-            r = requests.get('https://graph.facebook.com/' + idt + '/friends?access_token=' + toket)
-            z = json.loads(r.text)
-            for i in z['data']:
-                id.append(i['id'])
-
-        elif peak == '0':
-            menu()
-        else:
-            print 'Fill in the correct'
-            mbf()
-        print 'ID Obtained \xe2\x80\xa2 ' + str(len(id))
-        jalan('Wait')
-        titik = ['.   ', '..  ', '... ']
-        for o in titik:
-            print '\rCrack' + o,
-            sys.stdout.flush()
-            time.sleep(1)   
+               
             
  # print
     
