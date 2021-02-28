@@ -60,17 +60,18 @@ def download():
 #Tech-abm
 #logo01
 logo = """
-\033[1;93m          :::     :::::::::  ::::    ::::  
-\033[1;96m        :+: :+:   :+:    :+: +:+:+: :+:+:+ 
-\033[1;93m       +:+   +:+  +:+    +:+ +:+ +:+:+ +:+ 
-\033[1;96m      +#++:++#++: +#++:++#+  +#+  +:+  +#+ 
-\033[1;93m      +#+     +#+ +#+    +#+ +#+       +#+ 
-\033[1;96m      #+#     #+# #+#    #+# #+#       #+# 
-\033[1;93m      ###     ### #########  ###       ### 
+\033[1;92m                                                       
+      
+░█████╗░██████╗░██████╗░░█████╗░██████╗░
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗
+███████║██████╔╝██████╦╝███████║██████╦╝
+██╔══██║██╔══██╗██╔══██╗██╔══██║██╔══██╗
+██║░░██║██║░░██║██████╦╝██║░░██║██████╦╝
+╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░
 \033[1;97m--------------------------------------------------
-\033[1;95m➤\033[1;94m Coded by : Tech-Abm
-\033[1;95m➤\033[1;94m Github   : https://github.com/Tech-abm
-\033[1;95m➤\033[1;94m Fb Page  : https://m.facebook.com/Techabm
+\033[1;95m➤\033[1;94m Coded by : Arbab Ali
+\033[1;95m➤\033[1;94m Github   : https://github.com/ArbabMemon
+\033[1;95m➤\033[1;94m Fb Page  : https://m.facebook.com/ArbabMemon
 \033[1;97m--------------------------------------------------
 """
 
@@ -82,19 +83,19 @@ def tech_abm():
     abm("\033[1;93mFirst Tools login")
     print("\033[1;97m-------------------")
     username = raw_input("\033[1;97m[+]\033[1;96m Username :\033[1;97m ")
-    if username =="Abm":
+    if username =="Arbab":
         os.system("clear")
         print logo
-        print ("[✓] Username : Abm (Correct)")
+        print ("[✓] Username : Arbab (Correct)")
         passwordss = raw_input("\033[1;97m[+]\033[1;96m Password :\033[1;97m ")
-        if passwordss =="Abm":
+        if passwordss =="Memon":
             os.system("clear")
             print logo
             logging()
             os.system("clear")
             print logo 
-            print ("\033[1;97m[✓]\033[1;97m Username : Abm\033[1;92m (Correct)")
-            print ("\033[1;97m[✓]\033[1;97m Password : Abm\033[1;92m (Correct)")
+            print ("\033[1;97m[✓]\033[1;97m Username : Arbab\033[1;92m (Correct)")
+            print ("\033[1;97m[✓]\033[1;97m Password : Memon\033[1;92m (Correct)")
             time.sleep(1)
             print('')
             abm("\033[1;92m[✓] Login Successful\033[0;97m")
@@ -162,7 +163,7 @@ def clone_loginvia():
         sav.write(token)
         sav.close()
         abm("\r\033[1;92m[✓] Login Successfull\033[0;97m")
-	os.system('xdg-open https://m.facebook.com/Techabm')
+	os.system('xdg-open https://m.facebook.com/Arbabmemon')
         time.sleep(1)
         menu()
     elif hack =="2":
@@ -182,7 +183,7 @@ def loginfb():
     id1 = id.replace(' ','')
     id2 = id1.replace('(','')
     uid = id2.replace(')','')
-    pwd = raw_input("\033[1;97m[+]\033[1;93m Passwor :\033[1;97m ")
+    pwd = raw_input("\033[1;97m[+]\033[1;93m Password :\033[1;97m ")
     print("\033[1;97m--------------------------------------------------")
     logging()
     data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email="+uid+"&locale=en_US&password="+pwd+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6", headers=header).text
@@ -260,7 +261,7 @@ def menu_select():
         print logo
         abm("\033[1;32m[✓] Tool Has Been Updated Successfully\033[0;97m")
         time.sleep(1)
-        os.system("python2 ab.py")
+        os.system("python2 abm.py")
     elif option =="0":
         logout()
         os.system("rm -rf .login.txt")
